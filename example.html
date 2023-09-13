@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/path/to/clamp.js"></script>
+    <title>clamp.js</title>
+</head>
+<body>
+<style>
+    .wrapper {
+        max-height: 300px;
+    }
+</style>
+<div class="wrapper">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur, incidunt iure labore libero modi nihil nobis provident sed. Autem consequatur culpa ea in inventore natus pariatur quae recusandae reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur, incidunt iure labore libero modi nihil nobis provident sed.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur, incidunt iure labore </p>
+</div>
+
+<script>
+    $(document).ready(function() {
+        ClampInner.constructor('.wrapper');
+    });
+</script>
+</body>
+</html>
